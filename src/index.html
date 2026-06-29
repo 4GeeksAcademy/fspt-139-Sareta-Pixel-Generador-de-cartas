@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" href="./assets/img/4geeks.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Generador de cartas</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -13,22 +13,20 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Playwrite+GB+J+Guides:ital@0;1&family=Share+Tech&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div id="pokerCard" class="card heart">
+      <div id="icon1" class="icon1">♥</div>
+      <div id="number" class="number">As</div>
+      <div id= "icon2" class="icon2">♥</div>
     </div>
-
+    <button id="buttonCard">♦ ♥ Cambiar Carta ♠ ♣ </button>
+    <input type="number" id="input1" class="firstInput" placeholder="Selecciona el ancho">
+    <input type="number" id="input2" class= "secondInput" placeholder="Selecciona el alto">
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
   </body>
